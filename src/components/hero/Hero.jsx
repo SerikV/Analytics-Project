@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./hero.scss";
+import "./Hero.scss";
 import ButtonFree from "../../chip/ButtonFree";
 
 export default function Hero() {
