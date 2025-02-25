@@ -1,0 +1,80 @@
+.card {
+  border-radius: 30px;
+  opacity: 0.7;
+  background: #FFF;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20);
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 50px;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 340px; // Приблизна ширина картки
+  height: 440px;
+  padding-bottom: 150px;
+  @media  (max-width: 600px){
+    width: 100%;
+    max-width: 100%;
+  }
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    background-color: #FFF;
+    opacity: 1;
+  }
+  &--active{
+    background-color: #FFF;
+  }
+  &__title {
+    color: var(--text-main, #172755);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 50px;
+  }
+  &__users {
+    color: var(--text-secondary, #8794BA);
+    text-align: center;
+    /* text / body */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    margin-top: 10px;
+  }
+  &__price {
+    color: var(--text-main, #172755);
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+  }
+  &__button {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background: #ff4081; // Припустимо, це колір кнопки
+    color: white;
+    font-size: 18px;
+    margin-top: 35px;
+    cursor: pointer;
+    &:hover {
+      background: darken(#ff4081, 10%);
+    }
+  }
+}
+.card__button--inactive {
+  background: transparent;
+  color: white;
+  &:hover {
+    background: white;
+    color: #ff4081;
+  }
+}

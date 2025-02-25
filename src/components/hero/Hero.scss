@@ -1,0 +1,18 @@
+.hero{
+  // background-color: #172755;
+  background-image: url('/assets/hero-background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  @media  (max-width: 992px){
+    height: 100vh;
+  }
+
+  .hero-img{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+  }
+}
